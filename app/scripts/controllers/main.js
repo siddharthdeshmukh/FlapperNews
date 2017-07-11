@@ -10,8 +10,8 @@
 angular.module('flapperNewsAppApp')
   .controller('MainCtrl',['posts', function (po) {
     this.posts = po.posts;
-    this.addPost = function (post) {
-      po.addPost(post);
+    this.addPost = function () {
+      po.addPost(this.title,this.link);
     };
 
     this.incrementUpvotes = function (post) {

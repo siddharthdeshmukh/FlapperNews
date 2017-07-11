@@ -14,7 +14,7 @@
   </span>
   - upvotes: {{post.upvotes}}
 </div>
-    <form ng-submit="addPost()"
+    <form ng-submit="main.addPost()"
           style="margin-top:30px;">
       <h3>Add a new post</h3>
 
@@ -22,13 +22,13 @@
         <input type="text"
                class="form-control"
                placeholder="Title"
-               ng-model="title"></input>
+               ng-model="main.title"></input>
       </div>
       <div class="form-group">
         <input type="text"
                class="form-control"
                placeholder="Link"
-               ng-model="link"></input>
+               ng-model="main.link"></input>
       </div>
       <button type="submit" class="btn btn-primary">Post</button>
     </form>
